@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Image example</title>
+</head>
+<body>
+    {% for partner in partners %}
+        <img src="{{ partner.logo.url }}" alt="" />
+        <h2><a href="{{ partner.logo.url }}">{{ partner.logo }}</a></h2>
+    {% endfor %}
+</body>
+</html>
